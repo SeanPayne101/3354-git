@@ -16,12 +16,12 @@ public class Main {
         
         if (args[0] == '-') {
             for(int i = 1; i < args.length; i++) {
-                output -= args[i];
+                output -= Integer.valueOf(args[i]);
             }
         }
         else {
             for(int i = 0; i < args.length; i++) {
-                output += args[i];
+                output += Integer.valueOf(args[i]);
             }
         }
         
