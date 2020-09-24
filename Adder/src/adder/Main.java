@@ -16,7 +16,7 @@ public class Main {
     private static int addArguments(String... args) {
         int output = 0;
         for(int i = 0; i < args.length; i++) {
-            output += args[i];
+            output += Integer.valueOf(args[i]);
         }
         return output;
     }
